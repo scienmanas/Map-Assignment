@@ -55,7 +55,7 @@ export function MapCard({
   console.log(API_KEY);
 
   const { isLoaded } = useJsApiLoader({
-    googleMapsApiKey: API_KEY, // Replace with your Google Maps API key
+    googleMapsApiKey: API_KEY, 
   });
 
   const [selectedMarker, setSelectedMarker] = useState<number | null>(null);
@@ -95,7 +95,7 @@ export function MapCard({
         <GoogleMap
           id="map-card"
           mapContainerStyle={mapDimensions}
-          zoom={14}
+          zoom={13}
           center={{ lat: latNumber, lng: longNumber }}
           options={{
             mapTypeControl: false,
